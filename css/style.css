@@ -19,7 +19,7 @@ body {
   padding-bottom: 5px;
 }
 
-.nav-container {
+.nav-menú {
   background-color: #65451f;
 }
 
@@ -27,16 +27,16 @@ body {
   list-style: none;
 }
 
-.nav-container ul li {
+.nav-menú ul li a{
   display: inline-block;
 }
 
-.nav-container ul li a {
-  color: white;
+.nav-menú ul li a {
+  color: #fff !important;
   font-size: 15px;
-  font-family: "Noto Sans Display", sans-serif;
+  /* font-family: "Noto Sans Display", sans-serif; */
   border-radius: 5px;
-  text-decoration: none;
+  /* text-decoration: none; */
   display: block;
   padding: 20px;
   margin-left: 50px;
@@ -48,13 +48,24 @@ body {
   font-weight: 700;
   padding: 9px 25px;
   border-radius: 50px;
+  margin-left: 535px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* .btn {
+  background: #eceff1;
+  color: #1b3039;
+  font-weight: 700;
+  padding: 9px 25px;
+  border-radius: 50px;
   margin-right: 50px;
   margin-top: 12px;
   float: right;
   cursor: pointer;
-}
+} */
 
-.nav-container ul li a:hover {
+.nav-menú ul li a:hover {
   background-color: red;
 }
 
