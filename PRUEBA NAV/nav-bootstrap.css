@@ -1,0 +1,35 @@
+.nav-menú{
+    background-color: #65451f;
+}
+
+.nav-menú ul li a{
+    display: inline-block;
+}
+
+.nav-menú ul li a{
+  color: #fff !important;
+  font-size: 15px;
+  border-radius: 5px;
+  display: block;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.btn {
+    background: #eceff1;
+    color: #1b3039;
+    font-weight: 700;
+    padding: 9px 25px;
+    border-radius: 50px;
+    margin-left: 535px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+.nav-menú ul li a:hover {
+    background-color: red;
+  }
+
+  .btn:hover {
+    background-color: rgb(218, 218, 218);
+  }
