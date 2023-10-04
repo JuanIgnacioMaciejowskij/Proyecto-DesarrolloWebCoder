@@ -14,17 +14,13 @@ body {
 }
 
 .title {
-  font-family: 'Oswald', sans-serif;;
+  font-family: 'Oswald', sans-serif;
   text-align: center;
   padding-bottom: 5px;
 }
 
 .nav-menú {
   background-color: #65451f;
-}
-
-.nav-container ul {
-  list-style: none;
 }
 
 .nav-menú ul li a{
@@ -34,12 +30,19 @@ body {
 .nav-menú ul li a {
   color: #fff !important;
   font-size: 15px;
-  /* font-family: "Noto Sans Display", sans-serif; */
   border-radius: 5px;
-  /* text-decoration: none; */
   display: block;
   padding: 20px;
-  margin-left: 50px;
+}
+
+.hamburguesa {
+  background-color: #0000003d;
+}
+
+.navegacion {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .btn {
@@ -48,22 +51,10 @@ body {
   font-weight: 700;
   padding: 9px 25px;
   border-radius: 50px;
-  margin-left: 535px;
+  margin-right: auto;
   margin-top: 10px;
   cursor: pointer;
 }
-
-/* .btn {
-  background: #eceff1;
-  color: #1b3039;
-  font-weight: 700;
-  padding: 9px 25px;
-  border-radius: 50px;
-  margin-right: 50px;
-  margin-top: 12px;
-  float: right;
-  cursor: pointer;
-} */
 
 .nav-menú ul li a:hover {
   background-color: red;
@@ -76,6 +67,10 @@ body {
 /* FIN estilos header-nav */
 
 /* COMIENZO estilos section - main */
+
+.body-index{
+  background-color: #f7f2f2;
+}
 
 .section {
   background-color: #f7f2f2;
@@ -93,6 +88,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .imagen {
@@ -127,6 +123,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .article {
@@ -187,6 +184,62 @@ body {
   font-size: 20px;
   color: white;
   padding-top: 5px;
+}
+
+/* responsive - index */
+
+@media only screen and (max-width:1043px) {
+  .cama2p{
+    margin-top: 25px;
+  }
+
+  .dresuar{
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width:703px) {
+  .modular{
+    margin-top: 25px;
+  }
+
+  .zapatero{
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width:458px) {
+  footer .titulo-seccion{
+    font-size: 20px;
+  }
+
+  footer .copy{
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width:351px) and (max-width:386px) {
+  footer .titulo-seccion{
+    font-size: 17px;
+  }
+
+  footer .copy{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width:280px) and (max-width:350px) {
+  footer .titulo-seccion{
+    font-size: 12px;
+  }
+  
+  .redes-sociales a{
+    font-size: 20px;
+  }
+
+  footer .copy{
+    font-size: 12px;
+  }
 }
 
 /* estilos productos.html */
@@ -263,6 +316,57 @@ h1,h2,h3,h4, ul, li, a, p{
   padding: 0;
   
   }
+
+  /* responsive - productos */
+
+@media only screen and (min-width:600px) and (max-width:800px) {
+  
+  .cards{
+    width: 400px;
+  }
+
+  .fotos{
+    text-align: center;
+  }
+
+  .fotos img{
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width:400px) and (max-width:599px) {
+  
+  .p1 {
+    font-size: 14px;
+  }
+
+  .cards{
+    width: 320px;
+  }
+
+  .fotos img{
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width:280px) and (max-width:399px) {
+  
+  .p1 {
+    font-size: 14px;
+  }
+
+  span{
+    display: none;
+  }
+
+  .cards{
+    width: 260px;
+  }
+
+  .fotos img{
+    width: 260px;
+  }
+}
 
 
 
