@@ -1,0 +1,23 @@
+@mixin display-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin weight700 {
+    font-weight: 700;
+}
+
+@mixin max-767 {
+    .container .row .nosotros {
+        width: 100%;
+      }
+      .content {
+          flex-direction: column;
+      }
+}

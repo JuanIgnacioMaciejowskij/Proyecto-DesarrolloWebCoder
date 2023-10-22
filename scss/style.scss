@@ -1,0 +1,670 @@
+@import '_variables.scss';
+@import '_mixin.scss';
+
+/* reseteo */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+/* inicio estilos index */
+
+.body-index{
+    background-color: $bg-color-body;
+}
+
+/* COMIENZO estilos header-nav */
+
+.titulo {
+    background-color: rgba(0, 0, 0, 0.199);
+  }
+  
+  .title {
+    font-family: $font-Oswald;
+    text-align: $text-center;
+    padding-bottom: 5px;
+  }
+  
+  .nav-menú {
+    background-color: $bg-color-menu;
+  }
+  
+  .nav-menú ul li a{
+    display: inline-block;
+  }
+  
+  .nav-menú ul li a {
+    color: #fff !important;
+    font-size: 15px;
+    border-radius: 5px;
+    display: block;
+    padding: 20px;
+  }
+  
+  .hamburguesa {
+    background-color: #ffffffa8;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .navegacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .btn {
+    background: #eceff1;
+    color: #1b3039;
+    @include weight700;
+    padding: 9px 25px;
+    border-radius: 50px;
+    margin-right: auto;
+    margin-top: 10px;
+    cursor: $manito;
+  }
+  
+  .nav-menú ul li a {
+    &:hover {
+        background-color: red;
+    }
+  }
+  
+  .btn {
+    &:hover {
+        background-color: rgb(218, 218, 218);
+    }
+  }
+  
+  /* FIN estilos header-nav */
+
+  /* COMIENZO estilos section - main */
+  
+  .section {
+    background-color: $bg-color-body;
+    padding-bottom: 2px;
+    padding-top: 1px;
+  }
+  
+  .primerparrafo {
+    margin: 3px 6px;
+    font-size: $font-20;
+    font-family: $font-Slabo;
+  }
+  
+  .contenedor {
+    @include d-flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .imagen {
+    width: 250px;
+    height: 250px;
+    margin: 0 5px;
+    border-radius: 15px;
+    cursor: $manito;
+  }
+  
+  .card1 {
+    text-align: $text-center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    margin: 0 40px;
+  }
+  
+  .card1 h2 {
+    font-size: 16px;
+    font-family: $font-EbGaramond;
+    text-transform: $transform-text;
+    font-weight: bold;
+  }
+  
+  .card1 p {
+    font-size: 15px;
+    font-family: $font-Roboto;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.699);
+  }
+  
+  .contenedor2 {
+    @include d-flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .article {
+    background-color: $bg-color-body;
+  }
+  
+  .product {
+    text-decoration: none;
+    color: red;
+    margin-left: 1px;
+  }
+  
+  .contact {
+    text-decoration: none;
+    color: red;
+    margin-left: 1px;
+  }
+  
+  .segundoparrafo {
+    font-size: $font-20;
+    font-family: $font-Slabo;
+    margin: 15px 6px;
+  }
+  
+  /* FIN ESTILOS SECTION - MAIN*/
+  
+  /* COMIENZO ESTILOS FOOTER */
+  
+  .container {
+    @include display-flex;
+  }
+  
+  .footer {
+    background-color: $color-negro;
+    color: white;
+  }
+  
+  .titulo-seccion {
+    font-family: $font-Lato;
+    font-size: 24px;
+  }
+  
+  .redes-sociales {
+    @include d-flex;
+  }
+  
+  .redes-sociales a {
+    font-size: 26px;
+    padding: 0 20px;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  
+  .copy {
+    font-size: $font-20;
+    color: white;
+    padding-top: 5px;
+  }
+  
+  /* responsive - index */
+  
+  @media only screen and (max-width:1043px) {
+    .cama2p{
+      margin-top: 25px;
+    }
+  
+    .dresuar{
+      margin-top: 25px;
+    }
+  }
+  
+  @media only screen and (max-width:703px) {
+    .modular{
+      margin-top: 25px;
+    }
+  
+    .zapatero{
+      margin-top: 25px;
+    }
+  }
+  
+  @media only screen and (max-width:458px) {
+    footer .titulo-seccion{
+      font-size: $font-20;
+    }
+  
+    footer .copy{
+      font-size: 18px;
+    }
+  }
+  
+  @media only screen and (min-width:351px) and (max-width:386px) {
+    footer .titulo-seccion{
+      font-size: 17px;
+    }
+  
+    footer .copy{
+      font-size: 15px;
+    }
+  }
+  
+  @media only screen and (min-width:280px) and (max-width:350px) {
+    footer .titulo-seccion{
+      font-size: 12px;
+    }
+    
+    .redes-sociales a{
+      font-size: $font-20;
+    }
+  
+    footer .copy{
+      font-size: 12px;
+    }
+  }
+  
+  /* estilos productos.html */
+  
+  .contenedor-Productos{
+    background-color: $bg-color-body;
+    padding-bottom: 2px;
+    padding-top: 1px;
+  }
+  
+  .p1 {
+    margin: 10px;
+    font-family: $font-Verdana;
+    font-size: 17px;
+    color: black;
+  }
+  
+  .destacado {
+    color: rgb(255, 0, 0);
+  }
+  
+  .destacado{
+    &:hover {
+        color: brown;
+    }
+  }
+  
+  .destacado2{
+    color: black;
+  }
+  
+  .destacado {
+    &:hover {
+        color: red;
+    }
+  }
+  
+  .none {
+    text-decoration: none;
+  }
+  
+  .cards {
+    display: grid;
+    width: 630px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    margin: 0 auto;
+  }
+  
+  .fotos img {
+    width: 630px;
+    border-radius: 15px;
+    cursor: $manito;
+  }
+  
+  .imagen1{
+    grid-column: 1/4;
+    height: auto;
+  }
+  
+  .imagen2{
+    grid-column: 1/4;
+    height: auto;
+  }
+  
+  .imagen3{
+    grid-column: 1/4;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* PARA QUITAR LOS MÁRGENES Y PADDING DE BOOTSTRAP */
+  
+  h1,h2,h3,h4, ul, li, a, p{
+  
+    margin: 0;
+    
+    padding: 0;
+    
+    }
+  
+    /* responsive - productos */
+  
+  @media only screen and (min-width:600px) and (max-width:800px) {
+    
+    .cards{
+      width: 400px;
+    }
+  
+    .fotos{
+      text-align: $text-center;
+    }
+  
+    .fotos img{
+      width: 400px;
+    }
+  }
+  
+  @media only screen and (min-width:400px) and (max-width:599px) {
+    
+    .p1 {
+      font-size: 14px;
+    }
+  
+    .cards{
+      width: 320px;
+    }
+  
+    .fotos img{
+      width: 320px;
+    }
+  }
+  
+  @media only screen and (min-width:280px) and (max-width:399px) {
+    
+    .p1 {
+      font-size: 14px;
+    }
+  
+    span{
+      display: none;
+    }
+  
+    .cards{
+      width: 260px;
+    }
+  
+    .fotos img{
+      width: 260px;
+    }
+  }
+  
+  /* preguntas frecuentes */
+  
+  .body-FAQ{
+    background-color: $bg-color-body;
+  }
+  
+  .contenedor-acordeon{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .contenedor-acordeon h2{
+    text-align: $text-center;
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-family: $font-Fira;
+  }
+  
+  .acordeon .contenido-acordeon{
+    &:hover {
+        background-color: #a8101070;
+    }
+  }
+  
+  .acordeon label {
+    display: block;
+    text-align: $text-center;
+    padding: 20px;
+    font-family: $font-Fira;
+    font-size: 25px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    color: #fff;
+    cursor: $manito;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    transition: all 300ms ease;
+  }
+  
+  .acordeon label{
+    &:hover {
+        background-color: #2e2e2e;
+    }
+  }
+  
+  .acordeon .contenido-acordeon{
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 300ms ease;
+  }
+  
+  .contenido-acordeon .h5 {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: $font-Fira;
+    font-weight: 400;
+    color: $color-negro;
+  }
+  
+  .btn-acordeon:checked ~ .contenido-acordeon {
+    max-height: 600px;
+    padding: 10px 0;
+  }
+  
+  .btn-acordeon {
+    display: none;
+  }
+  
+  .enlace-wp {
+    text-decoration: none;
+  }
+  
+  .enlace-wp {
+    &:hover {
+        color: rgb(255, 0, 0);
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+  
+    .contenedor-acordeon .contenido-acordeon .h5 .transf {
+      display: none;
+    }
+  
+    .contenedor-acordeon .acordeon label {
+      font-size: $font-20;
+    }
+  
+    .contenedor-acordeon .contenido-acordeon .h5 {
+      font-size: 18px;
+    }
+  }
+  
+  @media only screen and (max-width: 493px) {
+      .contenedor-acordeon h2 {
+      font-size: 23px;
+    }
+  }
+  
+  @media only screen and (max-width: 384px) {
+    .contenedor-acordeon h2 {
+      font-size: $font-20;
+    }
+  
+    .contenedor-acordeon .acordeon label {
+      font-size: 18px;
+    }
+  
+    .contenedor-acordeon .contenido-acordeon .h5 .tarjet-cred {
+      display: none;
+    }
+  
+    .contenedor-acordeon .contenido-acordeon .h5 .promos {
+      display: none;
+    }
+    }
+  
+  /* FIN PREGUNTAS FRECUENTES */
+  
+  /* sección nosotros */
+  
+  .body-nosotros {
+    background-color: $bg-color-body;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .container .row {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .container .row .nosotros {
+    width: 60%;
+    text-align: $text-center;
+    margin: auto;
+  }
+  
+  .container .row .nosotros .nuestra-empresa {
+    @include weight700;
+    font-size: 30px;
+    font-family: $font-Fira;
+    text-transform: capitalize;
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .container .row .nosotros .descrip-marca {
+    margin-top: 15px;
+    font-size: $font-20;
+    line-height: 1.5;
+    text-align: $text-center;
+    font-family: $font-Fira;
+  }
+  
+  .container .row .nosotros .local {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: $manito;
+  }
+  
+  .container .row .nosotros .services{
+    padding: 20px;
+    font-family: $font-Fira;
+    @include weight700;
+    text-align: $text-center;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  
+  .content {
+    @include display-flex;
+    margin: auto;
+  }
+  
+  .content .card {
+    flex: 1;
+    margin: 30px 20px;
+    text-align: $text-center;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-family: $font-Fira;
+  }
+  
+  .content .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    cursor: $manito;
+  }
+  
+  .content .card .card-title {
+    font-family: $font-Fira;
+    @include weight700;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .content .card .card-title .a-medida {
+    text-transform: $transform-text;
+  }
+  
+  .content .card .card-text {
+    font-family: $font-Fira;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 10px;
+  }
+  
+  .content .card .btn-mas{
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: $bg-color-body;
+    font-family: $font-Fira;
+    @include weight700;
+  }
+  
+  .content .card .btn-mas {
+    &:hover {
+    background-color: $color-negro;
+    color: #fff;
+    border: none;
+    opacity: 0.9;
+    }
+  }
+  
+  .ubicacion .nuestra-ubi {
+    @include weight700;
+    font-size: 30px;
+    font-family: $font-Fira;
+    text-transform: capitalize;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    text-align: $text-center;
+  }
+  
+  .ubicacion .horarios {
+    margin-top: 15px;
+    font-size: $font-20;
+    line-height: 1.5;
+    text-align: $text-center;
+    font-family: $font-Fira;
+    margin-bottom: 50px;
+  }
+  
+  .ubicacion .ubi {
+    margin-bottom: 50px;
+    border-radius: 20px;
+  }
+  
+  .ubicacion .te_esperamos {
+    text-transform: $transform-text;
+    font-weight: bold;
+  }
+  
+  /* responsive nosotros.html */
+  
+  @media screen and (max-width: 991px) {
+  
+    .container .row .nosotros {
+      width: 80%;
+    }
+  
+    .container .row .nosotros .services {
+      font-size: 28px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+  
+    @include max-767;
+
+  }
+  /* fin nosotros.html */
